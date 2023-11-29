@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    z-index: 3;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    background: url("image/homee.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    padding: 100px;
+}
+
+.bg-image h1 {
+
+    text-align: center;
+
+}
+
+::placeholder {
+    font-size: 25px;
+    padding: 25px;
+}
+
+.search input {
+    height: 70px;
+    width: 613px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%;
+    left: 29%;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 10px;
+}
+
+.centru {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -50%);
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+
+
+p {
+    color: grey;
+}
+
+/* menu */
+@media (max-width: 500px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+
+/* meniu */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    z-index: 2;
+
+}
+
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+
+
+.header_logo img {
+    width: 70px;
+}
+
+.header_logo img:hover {
+    transform: translateZ(70px);
+    perspective: 200px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header_logo {
+    perspective: 600px;
+    cursor: pointer;
+    transition: .5s;
+    flex: 0 0 60px;
+    position: relative;
+    z-index: 3;
+}
+
+.content {
+    padding: 0px 0px 0px 0px;
+}
+
+.content_text {
+    font-size: 18px;
+    line-height: 250px;
+}
+
+
+
+@media(max-width:767px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .content {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+
+
+.header_burger {
+    display: none;
+}
+
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+
+.header_list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+
+}
+
+.header_link {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header_link:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+
+@media (max-width:767px) {
+
+    .header_body {
+        height: 50px;
+    }
+
+    .header_logo {
+        flex: 0 0 50px;
+        border-radius: 10%;
+    }
+
+    .header_burger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger::before,
+    .header_burger::after {
+        content: ' ';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger::before {
+        top: 0;
+    }
+
+    .header_burger::after {
+        bottom: 0;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        padding: 70px 0px 0px 0px;
+    }
+
+    .header_menu.active {
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_list li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .header_link {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+
+    }
+}

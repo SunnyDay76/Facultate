@@ -1,0 +1,107 @@
+.services {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 110px 0 10px 0;
+}
+
+.services h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.services h1 span {
+    margin-left: 15px;
+    background: linear-gradient(to left, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services .services_cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 70px;
+}
+
+.services .services_box i {
+    font-size: 60px;
+    color: orange;
+    margin: 20px 0;
+    cursor: pointer;
+    padding-top: 10%;
+    justify-content: space-between;
+}
+
+.services .services_box h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
+
+}
+
+.services .services_box p {
+    text-align: center;
+    color: #919191;
+    margin-bottom: 60px;
+}
+
+@media(max-width:767px) {
+    .services {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 150px 0 10px 0;
+    }
+
+    .services h1 {
+        font-size: 35px;
+        margin-left: -10%;
+
+    }
+
+
+
+    .services h1 span {
+        margin-left: 12px;
+        background: linear-gradient(to left, #c72092, #6c14d0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .services .services_cards {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        margin-left: 50%;
+        justify-content: space-between;
+        position: relative;
+        top: 70px;
+        flex-direction: column;
+
+    }
+
+    .services .services_box i {
+        font-size: 60px;
+        color: orange;
+        margin-left: -10%;
+        cursor: pointer;
+        padding-top: 10%;
+        justify-content: space-between;
+    }
+
+    .services .services_box h3 {
+        margin-bottom: 12px;
+        font-size: 19px;
+
+    }
+
+    .services .services_box p {
+        text-align: center;
+        color: #919191;
+        margin-bottom: 60px;
+    }
+}

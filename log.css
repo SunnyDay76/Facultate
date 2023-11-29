@@ -1,0 +1,113 @@
+.logul {
+    background-image: url(loging_bg.png);
+}
+
+.logtext h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6c14d0;
+}
+
+.box {
+    background-color: white;
+    height: 380px;
+    width: 350px;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    margin-left: 35%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.log {
+    text-align: center;
+    margin-top: 10%;
+    text-align: end;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    text-indent: 20px;
+}
+
+.name input {
+    margin-bottom: 3%;
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.pass {
+    width: 350px;
+}
+
+.pass input {
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+
+}
+
+
+.buton_enter {
+    margin-left: 21%;
+    margin-top: 10%;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+}
+
+.textsing {
+    margin-top: 3%;
+    margin-left: 57%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.buton_enter {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
+.buton_enter p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.icons {
+    margin-left: 28%;
+
+}
+
+.icons i {
+    color: black;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
+@media(max-width:767px) {
+    .box {
+        margin-left: 28%;
+    }
+}

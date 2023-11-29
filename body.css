@@ -1,0 +1,212 @@
+div {
+    display: block;
+}
+
+
+.video {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+video {
+    opacity: 0.9;
+    margin-top: -10%;
+    width: 1263px;
+    height: 718px;
+    margin-bottom: -50%;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+}
+
+@media(max-width:767px) {
+    video {
+
+        display: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .video_text p {
+        display: none;
+        background-image: url(slideimg2.jpg)
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+.video_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ff1f8f;
+    text-shadow:
+        5px 5px #6c14d0,
+        8px 8px #ffffff;
+}
+
+
+
+
+
+/* video */
+section.first {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section .main .main_content .main_text h1 {
+    font-size: 70px;
+    line-height: 70px;
+
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+}
+
+section .main .main_content .main_text h1 span {
+    font-size: 70px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main_content .main_text p {
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+    color: rgb(18, 117, 84);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+section .main .main_content .main_image img {
+    width: 650px;
+    position: relative;
+    left: 0;
+    top: 75px;
+}
+
+img {
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+
+section .main .button {
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
+section .main .button:hover {
+    box-shadow: #c72092 0px 19px 38px, #6c14d0 0px 15px 12px;
+    transform: translateZ(70px);
+    perspective: 200px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+section .main .button a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section .main .button a:hover {
+    color: rgb(241, 234, 234);
+    transition: .5s;
+}
+
+.video_img {
+    display: none;
+}
+
+
+@media(max-width:767px) {
+    section .main .main_content {
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .video_img {
+        display: block;
+
+    }
+
+    img {
+        width: 557px;
+
+    }
+
+    section {
+        top: -70px;
+        width: 143%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section .main .main_content .main_image img {
+        width: 100%;
+        position: relative;
+        left: 35%;
+        top: 125px;
+        display: block;
+
+    }
+
+    section .main .main_content .main_text p {
+        width: 400px;
+        text-align: justify;
+        line-height: 21px;
+        color: rgb(18, 117, 84);
+        position: relative;
+        top: 85px;
+    }
+
+    section .main .button {
+        position: absolute;
+        left: 50%;
+        top: 175%;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: linear-gradient(to right, #c72092, #6c14d0);
+    }
+
+    section.first {
+        background-image: none;
+    }
+
+}

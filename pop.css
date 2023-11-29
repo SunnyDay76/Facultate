@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-image: url(loging_bg.png);
+
+}
+
+.imagine img {
+    width: 450px;
+    height: 200px;
+}
+
+.homee {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    color: white;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.homee:hover {
+    box-shadow: #c72092 0px 19px 38px, #6c14d0 0px 15px 12px;
+    transform: translateZ(70px);
+    transition: .5s;
+}
+
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    position: absolute;
+    top: 45%;
+    left: 32%;
+}
+
+.wrapper {
+    margin-left: 32%;
+    margin-top: 10%;
+    width: 500px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 10px;
+
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.9s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10%;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+    }
+}
+
+@media(max-width:767px) {
+    .wrapper {
+        margin-left: 0%;
+        margin-top: 60%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 30%;
+    }
+
+    .text {
+        margin-left: 10%;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+    }
+
+    .homee {
+        position: absolute;
+        top: 65%;
+        left: 30%;
+
+    }
+}

@@ -1,0 +1,125 @@
+h1 {
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 55px;
+    margin-bottom: 10%;
+    left: 37px;
+}
+
+
+.cutie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.product_imagine {
+
+    perspective: 400px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+img {
+    width: 150px;
+}
+
+.product_imagine img:hover {
+    transform: translateZ(70px);
+    perspective: 200px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.product {
+    height: 400px;
+    width: 260px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #c72092;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 20px;
+    margin: 25px;
+    text-align: center;
+}
+
+.product .product_imagine {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 20%;
+    margin-right: 50px;
+}
+
+.product .product_text {
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: center;
+
+    height: 30px;
+    width: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product .price {
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 20px;
+    width: 50px;
+
+}
+
+.product .buton {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #00BAF0;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.product .buton:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: translateZ(70px);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.product .product_star {
+    margin: 7%;
+}
+
+.fa-solid {
+    color: orange;
+}
+
+@media(max-width: 767px) {
+    h1 {
+        width: 100%;
+        margin-bottom: 25%;
+        margin-left: 60px;
+
+    }
+
+    .product {
+
+        margin-left: 55%;
+
+    }
+
+    .cutie {
+        display: inline-block;
+        grid-template-columns: none;
+        column-gap: none;
+        row-gap: none;
+
+    }
+}
